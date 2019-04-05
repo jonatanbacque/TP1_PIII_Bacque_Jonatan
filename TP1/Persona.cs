@@ -19,19 +19,24 @@ namespace TP1
 
         public Persona() { }
 
-        public Persona(string Nombre, string Apellido, DateTime Nacimiento, string Genero, string Musica)
+        public Persona(string nombre, string apellido, DateTime nacimiento, string genero, string musica)
         {
-            this.Nombre = Nombre;
-            this.Apellido = Apellido;
-            this.Color = Color;
-            this.Genero = Genero;
-            this.Musica = Musica;
-            this.Color = Color;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Nacimiento = Nacimiento;
+            this.Genero = genero;
+            this.Musica = musica;
+            this.Color = color;
         }
 
         public string nombreCompleto()
         {
             return Nombre + " " + Apellido;
+        }
+
+        public int NacimientoCalcular()
+        {
+
         }
     }
 }
